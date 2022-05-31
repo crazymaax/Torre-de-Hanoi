@@ -5,4 +5,4 @@ A Torre de Hanoi é um quebra-cabeças que consiste de três varetas e um númer
 
 Neste jogo podemos escolher a quantidade de discos entre 3 a 6.
 
-<a href="https://crazymaax.github.io/Torre-de-Hanoi/">Acesse o site do jogo.</a>
+<a href="https://crazymaax.github.io/Torre-de-Hanoi-Fork/">Acesse o site do jogo.</a>
