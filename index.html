@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre de Hanoi</title>
+    <link rel="stylesheet" href="source/CSS/reset.css">
+    <link rel="stylesheet" href="source/CSS/style.css">
+</head>
+
+<body>
+    <header>
+
+        <h1>Torre de Hanoi Arco-ìris</h1>
+
+        <ul>
+
+            <li>
+                <p>Quantidade de discos: <span id="dificulty"></span></p>
+            </li>
+            
+            <li>
+                <p>Movimentos: <span id="moves">0</span></p>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <main>
+        <div id="game">
+
+        </div>
+
+        <div id="inicialMessage">
+
+            <button id="instructions">Instruções</button>
+
+            <p>Por favor, escolha a quantidade de discos do jogo.</p>
+
+            <ul class="difficultyList">
+
+                <li>
+                    <button id="threeDisks" class="difficultyButton">3</button>
+                </li>
+
+                <li>
+                    <button id="fourDisks" class="difficultyButton">4</button>
+                </li>
+
+                <li>
+                    <button id="fiveDisks" class="difficultyButton">5</button>
+                </li>
+
+                <li>
+                    <button id="sixDisks" class="difficultyButton">6</button>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="instructions">
+
+            <button id="backMenu">Voltar</button>
+
+            <p>
+                O objetivo deste jogo consiste em deslocar
+                todos os discos da primeira haste para a última
+                haste, respeitando as seguintes regras:
+            </p>
+
+            <p>
+                1 - Deslocar um disco de cada vez, o qual deverá
+                ser o do topo de uma das três hastes;
+
+            </p>
+
+            <p>
+                2 - Cada disco nunca poderá ser colocado sobre
+                outro de diâmetro menor.
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Desenvolvido por: Max <a class="linkedin" href="https://www.linkedin.com/in/maxmilan/" target="_blank">
+                <img src="source/Images/linkedinicon.svg" alt="Ícone do Linkedin">
+            </a> <a class="github" href="https://github.com/crazymaax/" target="_blank">
+                <img src="source/Images/githubicon.svg" alt="Ícone do GitHub">
+            </a>
+        </p>
+
+        <p>Design realizado em <a href="https://www.figma.com/file/5LRXDRtLAJ94oQuEAhMDvT/Torre-de-Hanoi?node-id=2%3A3"
+                target="_blank">Figma.com</a></p>
+
+    </footer>
+
+    <script src="source/JavaScript/main.js"></script>
+    <script src="source/JavaScript/game.js"></script>
+</body>
+
+</html>
