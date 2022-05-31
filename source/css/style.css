@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+body{
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 35px;
+    font-weight: 600;
+    background-color: #C8F0F5;
+}
+
+button {
+    font-family: "Patrick Hand SC", cursive;
+}
+
+header {
+    background-color: #FFB9B9;
+    height: 139px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+header h1 {
+    line-height: 47.4px;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 25% 0px;
+}
+
+.restart {
+    align-self: center;
+    width: 274px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 9px;
+    background-color: #ADA8A8;
+}
+
+#game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.tower {
+    width: 4vw;
+    height: 535px;
+    background-color: #5B400C;
+    border-radius: 20px;
+}
+
+.base {
+    width: 30vw;
+    height: 27px;
+    background-color: #5B400C;
+    cursor: default;
+}
+
+#tower1, #tower2, #tower3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#tower2 {
+    margin: 0 5px;
+}
+
+.disk1 {
+    width: 28vw;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #FF0000;
+    display: none;
+}
+
+.disk1:hover, .disk2:hover, .disk3:hover, .disk4:hover, .disk5:hover, .disk6:hover, #inicialMessage #instructions:hover, #threeDisks, #fourDisks, #fiveDisks, #sixDisks, #backMenu:hover{
+    cursor: pointer;
+}
+
+.disk2 {
+    width: 24vw;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #FF7A00;
+    display: none;
+}
+
+.disk3 {
+    width: 20vw;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #FFF500;
+    display: none;
+}
+
+.disk4 {
+    width: 16vw;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #14FF00;
+    display: none;
+}
+
+.disk5 {
+    width: 12vw;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #2400FF;
+    display: none;
+}
+
+.disk6 {
+    width: 8vw;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #9E00FF;
+    display: none;
+}
+
+.selected {
+    margin-bottom: 20px;
+}
+
+
+#inicialMessage {
+    max-width: 700px;
+    height: 705px;
+    background-color: #E2A974;
+    border-radius: 60px;
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#inicialMessage #instructions {
+    width: 370px;
+    height: 91px;
+    font-size: 70px;
+    background-color: #ADA8A8;
+    border-radius: 9px;
+    border: solid transparent;
+    position: relative;
+    top: -28%;
+
+}
+
+.difficultyList {
+    display: flex;
+}
+
+.difficultyList li {
+    padding: 0 25px;
+    padding-top: 30px;
+}
+
+.difficultyButton {
+    width: 55px;
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: 30px;
+    font-size: 40px;
+}
+
+#threeDisks {
+    color: #FFF500;
+}
+
+#fourDisks {
+    color: #14FF00;
+}
+
+#fiveDisks {
+    color: #2400FF;
+}
+
+#sixDisks {
+    color: #9E00FF;
+}
+
+.instructions {
+    max-width: 700px;
+    height: 705px;
+    background-color: #E2A974;
+    border-radius: 60px;
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+#backMenu {
+    width: 104px;
+    height: 54px;
+    font-size: 35px;
+    background-color: #ADA8A8;
+    border-radius: 9px;
+    border: solid transparent;
+    position: relative;
+    top: -18%;
+    left: -37%;
+}
+
+.instructions p {
+    text-align: center;
+    padding: 0 10%;
+}
+
+.victoryMessage {
+    width: 697px;
+    height: 215px;
+    background-color: #E2A974;
+    border-radius: 60px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.victoryMessage p {
+    text-align: center;
+}
+
+
+footer {
+    background-color: #0A9A33;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+footer p {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+    margin-left: 18px;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        height: 253px;
+        flex-direction: column-reverse;
+        font-size: 50px;
+    }
+
+    header h1 {
+        margin-top: 34px;
+        font-size: 70px;
+    }
+
+    header ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #inicialMessage p {
+        margin: 0 80px;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
